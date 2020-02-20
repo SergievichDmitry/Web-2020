@@ -23,6 +23,10 @@ header{
     height: 202%;
 }
 
+#video123{
+    border:1px solid #b5bcb6;
+}
+
 #video12345{
     position: absolute;
     width: 70%;
@@ -80,7 +84,7 @@ display: none;
     height: 77%;
     width: 100%;
     position: absolute;
-    top: 280px;
+    top: 270px;
     z-index: 0;
     display: flex;
 }
@@ -372,8 +376,13 @@ ul{
         margin: 0 auto 13% auto;
     }
 
+    #clouds_middle{
+        display: none;
+    }
+
     #clouds{
         height: 107%;
+        width: 100%;
         position: absolute;
         top: 300px;
         z-index: 0;
