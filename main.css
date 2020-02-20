@@ -69,6 +69,7 @@ header{
 
 #all{
     padding: 0 3%;
+    overflow: hidden;
 }
 
 #cloud_left, #cloud_right, #g2, #clouds{
@@ -77,8 +78,9 @@ display: none;
 
 #clouds_middle{
     height: 77%;
+    width: 100%;
     position: absolute;
-    top: 310px;
+    top: 280px;
     z-index: 0;
     display: flex;
 }
@@ -566,8 +568,9 @@ ul{
 
     #clouds_middle{
         height: 60%;
+        width: 100%;
         position: absolute;
-        top: 830px;
+        top: 800px;
         z-index: 0;
         display: flex;
     }
