@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pre-employment</title>
+    <link rel="stylesheet" href="main.css">
+    <style>html { overflow-x: hidden; }</style>
+    <script>
+        function isEmail() {
+            var str = document.getElementById("b11_i3").value;
+            var str1 = document.getElementById("b11_i1").value;
+            var str2 = document.getElementById("b11_i2").value;
+            var re = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+            if (re.test(str)) {
+                if (str1 != isEmpty(str1))
+                    if (str2 != isEmpty(str1)) {
+                        b1_p.innerHTML = "Your details have been sent and a representative\n" +
+                            "                from ePlane will be in contact with you shortly.";
+                        b1_h2.innerHTML = "Thank You!";
+                        b11_p.remove();
+                        form.remove();
+                        b11_h2.remove()
+                    }
+            }
+            else {
+                alert("Проверьте правильность данных!");}
+            if(isEmpty(str))
+                alert("Заполните поля!");
+        }
+
+        function isEmpty(str){
+            return (str == null) || (str.length == 0);
+        }
+
+
+
+        function openVideo() {
+            vid.style.cssText = "display: flex";
+            video12345.play();
+            play.style.cssText = "display: none";
+        }
+
+        function closeVideo() {
+            vid.style.cssText = "display: none";
+            video12345.pause();
+            play.style.cssText = "display: flex";
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <section id="back"/>
+
+    <section id="vid">
+        <input id="close" type="button" onclick="closeVideo()" value="X"/>
+        <video id="video12345" src="https://www.w3schools.com/html/mov_bbb.mp4" controls/>
+    </section>
+
+    <header>
+        <object type="image/svg+xml" data="logo.svg">
+            Your browser doesnt support svg
+        </object>
+    </header>
+
+    <object type="image/svg+xml" data="clouds_middle.svg" id="clouds_middle">
+        Your browser doesnt support svg
+    </object>
+
+    <object type="image/svg+xml" data="clouds.svg" id="clouds">
+        Your browser doesnt support svg
+    </object>
+    <object type="image/svg+xml" data="cloudie%20left.svg" id="cloud_left">
+        Your browser doesnt support svg
+    </object>
+    <object type="image/svg+xml" data="cloudie%20right.svg" id="cloud_right">
+        Your browser doesnt support svg
+    </object>
+
+    <section id="all">
+        <object type="image/svg+xml" data="gift2.svg" id="g2">
+            Your browser doesnt support svg
+        </object>
+
+        <div id="lin"></div>
+
+        <section id="a">
+            <section id="a1">
+                <H1>SOON,</H1>
+                <H2>You will enter a new era of aerospace eCommerce</H2>
+            </section>
+            <section id="a23">
+                <section id="a2">
+                    <H4 id="h4a2">ePlane will offer an end to end marketplace,
+                    you can rely on.</H4>
+                    <p id = "a2_p1">Our goal is to connect buyers and sellers, on one convenient
+                    platform, benefiting all sides and giving more power for you!
+                    By streamlining the order process, ePlane will increase efficiency
+                    and productivity.</p>
+
+                    <p id = "a2_p2">ePlane will support four different transction types - Buy, Repair,
+                    Exchange and Loan - covering all of your sale and acquisition needs.</p>
+                </section>
+
+                <section id="a3">
+                        <video id="video123" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+                        <div id="play" onclick="openVideo()"/>
+                </section>
+
+            </section>
+
+        </section>
+
+        <section id="b">
+
+            <object type="image/svg+xml" data="cloudie.svg" id="cloudie">
+                Your browser doesnt support svg
+            </object>
+
+            <section id="b11">
+                <object type="image/svg+xml" data="cup_middle.svg" id="cup_middle">
+                    Your browser doesnt support svg
+                </object>
+                <object type="image/svg+xml" data="cup_mobile.svg" id="cup_small">
+                    Your browser doesnt support svg
+                </object>
+                <object type="image/svg+xml" data="cup_big.svg" id="cup_big">
+                    Your browser doesnt support svg
+                </object>
+                <h2 id="b11_h2">Join us as a seller and takeoff with ePlane!</h2>
+                <p id="b11_p">List your parts today. No subscription fee is required. Leave your details to receive further information.</p>
+
+                <form id="form" novalidate>
+                    <section id="b11_i" >
+                        <input id="b11_i1" type="text" placeholder="First Name" required />
+                        <input id="b11_i2" type="text" placeholder="Company" required />
+                        <input id="b11_i3" type="text" placeholder="eMail" required />
+                        <span id="status"></span>
+                    </section>
+                    <input id="b11_f" type="button" onclick="isEmail()" value="Join as a Seller"/>
+                </form>
+            </section>
+
+            <section id="b1">
+                <h2 id="b1_h2"></h2>
+                <p id="b1_p"></p>
+            </section>
+        </section>
+
+        <section id="c">
+            <object type="image/svg+xml" data="hands.svg" id="hands">
+                Your browser doesnt support svg
+            </object>
+            <section id="c1">
+                <H4 id="c11">Seller's Benefits</H4>
+                <ul>
+                    <li>Bigger market presence and inventory explosure</li>
+                    <li>An integrated communication system</li>
+                    <li>Convenient orders and payments online</li>
+                    <li>Improved sales efficiency to generate more sales</li>
+                    <li>Personalized statistics and business insights</li>
+                </ul>
+            </section>
+            <section id="c2">
+                <H4 id="c12">Biyer's Benefits</H4>
+                <ul>
+                    <li>Full transparency - documentation, tags, and prices</li>
+                    <li>100% legitimate and reliable inventory listings</li>
+                    <li>An integrated communication system</li>
+                    <li>Comrehensive part comparsion tool</li>
+                    <li>Personalized statistics and business insights</li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="d">
+            <h3>Our vision is to make trading efficient, simple, and reliable,
+            for the entire aerospace industry.</h3>
+        </section>
+    </section>
+    <footer>
+        <p id="foot">@ 2016 ePlane Inc. All Rights Reserved | Contact us: hello@eplane.com</p>
+    </footer>
+
+</body>
+</html>
