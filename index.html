@@ -39,18 +39,20 @@
             vid.style.cssText = "display: flex";
             video12345.play();
             play.style.cssText = "display: none";
+            body.style.cssText = "position: fixed";
         }
 
         function closeVideo() {
             vid.style.cssText = "display: none";
             video12345.pause();
             play.style.cssText = "display: flex";
+            body.style.cssText = "position: static";
         }
 
     </script>
 
 </head>
-<body>
+<body id="body">
 
     <section id="back"/>
 

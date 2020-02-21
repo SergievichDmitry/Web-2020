@@ -16,7 +16,7 @@ header{
 
 #vid{
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
@@ -349,21 +349,13 @@ ul{
     }
 
     #video12345{
-        position: absolute;
-        width: 50%;
+        width: 60%;
         height: 30%;
-        margin: 12% 25%;
+        margin: 12% 20%;
     }
 
     #close{
-        position: absolute;
-        width: 60px;
-        height: 60px;
-        margin: 10% 75%;
-        font-size: 24px;
-        color: white;
-        background: rgba(0, 0, 0, 0);
-        border: 0;
+        margin: 10% 80%;
     }
 
     #play{
@@ -511,7 +503,7 @@ ul{
         position: absolute;
         width: 90%;
         height: 55%;
-        margin: 5% 5%;
+        margin: -20% 5% 0;
     }
 
     #video123{
@@ -525,14 +517,7 @@ ul{
     }
 
     #close{
-        position: absolute;
-        width: 60px;
-        height: 60px;
         margin: 30% 92%;
-        font-size: 24px;
-        color: white;
-        background: rgba(0, 0, 0, 0);
-        border: 0;
     }
 
     #vid{
