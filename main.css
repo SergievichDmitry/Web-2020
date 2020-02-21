@@ -38,7 +38,7 @@ header{
 }
 
 #play{
-    position: fixed;
+    position: absolute;
     background: url("playround.svg");
     margin: auto;
     width: 100px;
