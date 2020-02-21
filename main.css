@@ -376,7 +376,7 @@ ul{
         height: 790px;
         width: 100%;
         position: absolute;
-        top: 300px;
+        top: 310px;
         z-index: 0;
         display: flex;
     }
@@ -440,9 +440,9 @@ ul{
     }
 
     #hands{
-        width: 54%;
-        height: 53px;
-        right: 23%;
+        width: 52%;
+        height: 54px;
+        right: 24%;
         padding-top: 28px;
     }
 
@@ -547,13 +547,14 @@ ul{
 
     #b{
         width: 96%;
+        margin: 0 auto 15%;
     }
 
     #clouds_middle{
-        height: 500px;
+        height: 490px;
         width: 100%;
         position: absolute;
-        top: 800px;
+        top: 780px;
         z-index: 0;
         display: flex;
     }
