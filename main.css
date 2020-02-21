@@ -79,7 +79,7 @@ display: none;
 }
 
 #clouds_middle{
-    height: 77%;
+    height: 600px;
     width: 100%;
     position: absolute;
     top: 270px;
@@ -230,7 +230,7 @@ display: none;
 #hands{
     position: absolute;
     width: 65%;
-    height: 8%;
+    height: 60px;
     padding-left: 10.8%;
     padding-top: 19px;
     z-index: 1;
@@ -357,9 +357,6 @@ ul{
         padding: 10px 0 20px;
     }
 
-    /*#vid1{*/
-        /*padding: 20vh 3% 0 10%;*/
-    /*}*/
 
     #play{
         width: 110px;
@@ -376,7 +373,7 @@ ul{
     }
 
     #clouds{
-        height: 107%;
+        height: 790px;
         width: 100%;
         position: absolute;
         top: 300px;
@@ -402,8 +399,8 @@ ul{
         position: absolute;
         width: 200px;
         height: 200px;
-        top: 85%;
-        padding-left: 83%;
+        top: 600px;
+        left: 81%;
     }
 
     #cup_small, #cup_middle{
@@ -444,7 +441,7 @@ ul{
 
     #hands{
         width: 54%;
-        height: 8%;
+        height: 53px;
         right: 23%;
         padding-top: 28px;
     }
@@ -502,10 +499,6 @@ ul{
         height: 970px;
     }
 
-    /*#vid1{*/
-        /*padding: 20vh 3% 0 10%;*/
-    /*}*/
-
     #video123{
         display: block;
         width: 100%;
@@ -515,10 +508,6 @@ ul{
         width: 140px;
         height: 140px;
     }
-
-    /*#close{*/
-            /*margin: 30% 92%;*/
-        /*}*/
 
     #vid{
         height: 324%;
@@ -561,7 +550,7 @@ ul{
     }
 
     #clouds_middle{
-        height: 60%;
+        height: 500px;
         width: 100%;
         position: absolute;
         top: 800px;
