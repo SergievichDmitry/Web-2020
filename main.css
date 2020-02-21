@@ -38,8 +38,8 @@ header{
     position: absolute;
     background: url("playround.svg");
     margin: auto;
-    width: 10%;
-    height: 30%;
+    width: 100px;
+    height: 100px;
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -364,7 +364,8 @@ ul{
     }
 
     #play{
-        margin-top: 5%;
+        width: 110px;
+        height: 110px;
     }
 
     #a{
