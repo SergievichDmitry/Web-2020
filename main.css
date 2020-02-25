@@ -10,9 +10,11 @@ body{
 }
 
 header{
+    background: url("logo.svg") no-repeat;
+    background-position: center;
     text-align: center;
     padding: 20px 0 35px;
-    height: 20px;
+    height: 10px;
 }
 
 #vid{
