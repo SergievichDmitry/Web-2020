@@ -38,25 +38,25 @@
             vid.style.cssText = "display: flex";
             video12345.play();
             play.style.cssText = "display: none";
-            body.style.cssText = "position: fixed";
+            bd.style.cssText = "position: fixed";
         }
 
         function closeVideo() {
             vid.style.cssText = "display: none";
             video12345.pause();
             play.style.cssText = "display: flex";
-            body.style.cssText = "position: static";
+            bd.style.cssText = "position: static";
         }
 
     </script>
 
 </head>
-<body id="body">
+<body id="bd">
 
-    <section id="back"/>
+    <section class="back"/>
 
     <section id="vid">
-        <section id="vid1">
+        <section class="vid1">
             <input id="close" type="button" onclick="closeVideo()" value="X"/>
             <video id="video12345" src="https://www.w3schools.com/html/mov_bbb.mp4" controls/>
         </section>
@@ -82,23 +82,22 @@
         Your browser doesnt support svg
     </object>
 
-    <section id="all">
-        <object type="image/svg+xml" data="gift2.svg" id="g2">
-            Your browser doesnt support svg
-        </object>
+    <section class="all">
 
-        <div id="lin"></div>
+        <section id="g2"></section>
 
-        <section id="a">
-            <section id="a1">
+        <div class="lin"></div>
+
+        <section class="a">
+            <section class="a1">
                 <H1>SOON,</H1>
                 <H2>You will enter a new era of aerospace eCommerce</H2>
             </section>
-            <section id="a23">
-                <section id="a2">
+            <section class="a23">
+                <section class="a2">
                     <H4 id="h4a2">ePlane will offer an end to end marketplace,
                     you can rely on.</H4>
-                    <p id = "a2_p1">Our goal is to connect buyers and sellers, on one convenient
+                    <p>Our goal is to connect buyers and sellers, on one convenient
                     platform, benefiting all sides and giving more power for you!
                     By streamlining the order process, ePlane will increase efficiency
                     and productivity.</p>
@@ -107,7 +106,7 @@
                     Exchange and Loan - covering all of your sale and acquisition needs.</p>
                 </section>
 
-                <section id="a3">
+                <section class="a3">
                         <video id="video123" src="https://www.w3schools.com/html/mov_bbb.mp4" poster="vid.PNG"></video>
                         <div id="play" onclick="openVideo()"/>
                 </section>
@@ -115,13 +114,11 @@
 
         </section>
 
-        <section id="b">
+        <section class="b">
 
-            <object type="image/svg+xml" data="cloudie.svg" id="cloudie">
-                Your browser doesnt support svg
-            </object>
+            <section id="cloudie"></section>
 
-            <section id="b11">
+            <section class="b11">
                 <object type="image/svg+xml" data="cup_middle.svg" id="cup_middle">
                     Your browser doesnt support svg
                 </object>
@@ -131,32 +128,32 @@
                 <object type="image/svg+xml" data="cup_big.svg" id="cup_big">
                     Your browser doesnt support svg
                 </object>
-                <h2 id="b11_h2">Join us as a seller and takeoff with ePlane!</h2>
-                <p id="b11_p">List your parts today. No subscription fee is required. Leave your details to receive further information.</p>
+                <h2 class="b11_h2">Join us as a seller and takeoff with ePlane!</h2>
+                <p class="b11_p">List your parts today. No subscription fee is required. Leave your details to receive further information.</p>
 
-                <form id="form" novalidate>
-                    <section id="b11_i" >
+                <form class="form" novalidate>
+                    <section class="b11_i" >
                         <input id="b11_i1" type="text" placeholder="First Name" required />
                         <input id="b11_i2" type="text" placeholder="Company" required />
                         <input id="b11_i3" type="text" placeholder="eMail" required />
                         <span id="status"></span>
                     </section>
-                    <input id="b11_f" type="button" onclick="isEmail()" value="Join as a Seller"/>
+                    <input class="b11_f" type="button" onclick="isEmail()" value="Join as a Seller"/>
                 </form>
             </section>
 
-            <section id="b1">
-                <h2 id="b1_h2"></h2>
-                <p id="b1_p"></p>
+            <section class="b1">
+                <h2 class="b1_h2"></h2>
+                <p class="b1_p"></p>
             </section>
         </section>
 
-        <section id="c">
+        <section class="c">
             <object type="image/svg+xml" data="hands.svg" id="hands">
                 Your browser doesnt support svg
             </object>
-            <section id="c1">
-                <H4 id="c11">Seller's Benefits</H4>
+            <section class="c1">
+                <H4 class="c11">Seller's Benefits</H4>
                 <ul>
                     <li>Bigger market presence and inventory explosure</li>
                     <li>An integrated communication system</li>
@@ -165,8 +162,8 @@
                     <li>Personalized statistics and business insights</li>
                 </ul>
             </section>
-            <section id="c2">
-                <H4 id="c12">Biyer's Benefits</H4>
+            <section class="c2">
+                <H4 class="c12">Biyer's Benefits</H4>
                 <ul>
                     <li>Full transparency - documentation, tags, and prices</li>
                     <li>100% legitimate and reliable inventory listings</li>
@@ -177,7 +174,7 @@
             </section>
         </section>
 
-        <section id="d">
+        <section class="d">
             <h3>Our vision is to make trading efficient, simple, and reliable,
             for the entire aerospace industry.</h3>
         </section>

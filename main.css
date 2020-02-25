@@ -1,9 +1,10 @@
 body{
     margin: 0 auto;
     background: white;
+    font-family: Lucida, sans-serif;
 }
 
-#back{
+.back{
     height: 520px;
     background: #edf3f5;
 }
@@ -23,7 +24,7 @@ header{
     height: 202%;
 }
 
-#vid1{
+.vid1{
     display: block;
     width: 100%;
     padding: 20vh 3% 0 10%;
@@ -47,10 +48,6 @@ header{
     background-size: 100%;
 }
 
-#play:hover{
-    cursor: pointer
-}
-
 #close{
     padding-left: 91%;
     font-size: 24px;
@@ -59,7 +56,7 @@ header{
     border: 0;
 }
 
-#close:hover{
+#play:hover, #close:hover, #b11_f:hover{
     cursor: pointer
 }
 
@@ -69,12 +66,12 @@ header{
     display: flex;
 }
 
-#all{
+.all{
     padding: 0 3%;
     overflow: hidden;
 }
 
-#cloud_left, #cloud_right, #g2, #clouds{
+#cloud_left, #cloud_right, #g2, #clouds, #cup_small, #cup_big, .lin{
 display: none;
 }
 
@@ -87,7 +84,7 @@ display: none;
     display: flex;
 }
 
-#a{
+.a{
     display: block;
     width: 92%;
     margin: 0 auto 17%;
@@ -95,20 +92,17 @@ display: none;
     position: relative;
 }
 
-#lin{
-    display: none;
-}
 
-#a1{
+.a1{
     display: inline;
     color: #153a54;;
 }
 
-#a23{
+.a23{
     display: flex;
 }
 
-#a3{
+.a3{
     display: flex;
     margin: auto;
     align-items: center;
@@ -116,12 +110,12 @@ display: none;
     justify-content: center;
 }
 
-#a33{
+.a33{
     padding: 5%;
     background: #f26253;
 }
 
-#a2{
+.a2{
     padding: 0 6% 0 0;
 }
 
@@ -132,24 +126,17 @@ display: none;
     margin-top: -10%;
 }
 
-#cup_small{
-    display: none;
-}
-
-#cup_big{
-    display: none;
-}
-
 #cloudie{
+    background: url("cloudie.svg") no-repeat;
     display: flex;
     position: absolute;
     top: 85%;
-    width: 140px;
+    width: 70%;
     height: 120px;
     left: -20px;
 }
 
-#b{
+.b{
     background: #153a54;
     width: 88%;
     text-align: center;
@@ -161,20 +148,20 @@ display: none;
     position: relative;
 }
 
-#b11_h2{
+.b11_h2{
     text-align: left;
     padding: 2% 0 0;
     font-size: 24px;
     margin: 0;
 }
 
-#b11_p{
+.b11_p{
     text-align: left;
     padding: 0;
     margin: 5px 0 10px;
 }
 
-#b11_i{
+.b11_i{
     padding: 0 0 2%;
     justify-content: space-around;
     width: 100%;
@@ -191,11 +178,11 @@ display: none;
     border-color: #28921f;
 }
 
-#form{
+.form{
     position: relative;
 }
 
-#b11_f{
+.b11_f{
     position: absolute;
     display: flex;
     right: 1%;
@@ -208,21 +195,17 @@ display: none;
     font-size: 14px;
 }
 
-#b11_f:hover{
-    cursor: pointer;
-}
-
 #b11_i1, #b11_i2, #b11_i3{
     padding: 1%;
     margin: 1% 0;
     width: 30%;
 }
 
-#b1_h2{
+.b1_h2{
     padding-top: 4%;
 }
 
-#b1_p{
+.b1_p{
     width: 50%;
     margin: 0 auto;
 }
@@ -236,24 +219,22 @@ display: none;
     z-index: 1;
 }
 
-#c{
+.c{
     display: flex;
     width: 92%;
     margin: 0 auto 5% auto;
 }
 
-#c1{
+.c1, .c2{
     width: 65%;
     z-index: 2;
 }
 
-#c2{
-    width: 65%;
+.c2{
     margin: 0 0 0 10%;
-    z-index: 2;
 }
 
-#c11{
+.c11{
     background: #52a0b2;
     color: white;
     padding: 8px;
@@ -261,7 +242,7 @@ display: none;
     border-radius: 0 0 0 25px;
 }
 
-#c12{
+.c12{
     background: #f26253;
     color: white;
     padding: 8px;
@@ -269,7 +250,7 @@ display: none;
     border-radius: 0 0  25px 0;
 }
 
-#d{
+.d{
     width: 85%;
     text-align: center;
     margin: 0 auto 5% auto;
@@ -282,9 +263,7 @@ ul{
     list-style-type: square;
 }
 
-
 p{
-    font-family: Lucida, sans-serif;
     font-size: 15px;
 }
 
@@ -301,7 +280,6 @@ footer{
 }
 
 h1{
-    font-family: Lucida, sans-serif;
     font-size: 46px;
     font-weight: bolder;
     margin: 0;
@@ -309,46 +287,36 @@ h1{
 }
 
 h2{
-    font-family: Lucida, sans-serif;
     font-size: 29px;
     margin-top: 0;
 }
 
 h3{
-    font-family: Lucida, sans-serif;
     font-size: 22px;
 }
 
 h4{
-    font-family: Lucida, sans-serif;
     font-size: 18px;
     color: #153a54;
 }
 
-#h4a2{
+#h4a2, #a2_p2{
     margin: 0px;
 }
 
 li{
-    font-family: Lucida, sans-serif;
     padding: 2% 1%;
     font-size: 13px;
 }
 
 ul{
-    font-family: Lucida, sans-serif;
     padding-left: 16px;
-}
-
-
-#a2_p2{
-    margin-bottom: 0px;
 }
 
 
 @media (min-width: 1025px) {
 
-    #back{
+    .back{
         height: 640px;
     }
 
@@ -357,18 +325,17 @@ ul{
         padding: 10px 0 20px;
     }
 
-
     #play{
         width: 110px;
         height: 110px;
     }
 
-    #a{
+    .a{
         width: 63%;
         margin: 0 auto 13% auto;
     }
 
-    #clouds_middle{
+    #clouds_middle, #cup_small, #cup_middle{
         display: none;
     }
 
@@ -395,16 +362,14 @@ ul{
     }
 
     #g2{
+        background: url("gift2.svg") no-repeat;
+        background-size: 80%;
         display: flex;
         position: absolute;
-        width: 200px;
-        height: 200px;
-        top: 600px;
-        left: 81%;
-    }
-
-    #cup_small, #cup_middle{
-        display: none;
+        width: 180px;
+        height: 260px;
+        top: 590px;
+        left: 85%;
     }
 
     #cup_big{
@@ -416,25 +381,23 @@ ul{
     }
 
     #cloudie{
-        display: flex;
-        position: absolute;
         top: 85%;
-        width: 140px;
+        width: 60%;
         height: 120px;
         left: -40px;
     }
 
-    #b{
+    .b{
         width: 59%;
         margin: 0 auto 4% auto;
     }
 
-    #c{
+    .c{
         width: 63%;
         margin: 0 auto;
     }
 
-    #d{
+    .d{
         width: 52%;
         margin: 0 auto 2% auto;
     }
@@ -455,30 +418,24 @@ ul{
     }
 
     p{
-        font-family: Lucida, sans-serif;
         font-size: 16px;
     }
 
     h1{
-        font-family: Lucida, sans-serif;
         font-size: 54px;
-        font-weight: bolder;
         margin: 0;
     }
 
     h2{
-        font-family: Lucida, sans-serif;
         font-size: 37px;
-        margin-top: 0   ;
+        margin-top: 0;
     }
 
     h3{
-        font-family: Lucida, sans-serif;
         font-size: 26px;
     }
 
     h4{
-        font-family: Lucida, sans-serif;
         font-size: 22px;
     }
 
@@ -495,7 +452,7 @@ ul{
         padding-bottom: 20px;
     }
 
-    #back{
+    .back{
         height: 970px;
     }
 
@@ -513,11 +470,7 @@ ul{
         height: 324%;
     }
 
-    p{
-        font-size: 1.3em;
-    }
-
-    #lin{
+    .lin{
         display: block;
         width: 100%;
         height: 3px;
@@ -525,27 +478,20 @@ ul{
         background: #dce1e5;
     }
 
-    #a23, #c {
+    .a23, .c{
         display: block;
     }
 
-
-    #a1, #a2, #a3{
+    .a1, .a2, .a3, .a, .c, .c1, .c2{
         width: 100%;
     }
 
-    #a3{
+    .a3{
         padding-top: 3%;
         width: 100%;
     }
 
-
-
-    #a, #c, #c1, #c2{
-        width: 100%;
-    }
-
-    #b{
+    .b{
         width: 96%;
         margin: 0 auto 15%;
     }
@@ -553,22 +499,18 @@ ul{
     #clouds_middle{
         height: 490px;
         width: 100%;
-        position: absolute;
         top: 780px;
-        z-index: 0;
         display: flex;
     }
 
     #cloudie{
-        display: flex;
-        position: absolute;
         top: 86%;
         width: 160px;
         height: 130px;
         left: -15px;
     }
 
-    #b1{
+    .b1{
         padding: 3% 0 7%;
     }
 
@@ -587,19 +529,18 @@ ul{
         right: 3.5%;
     }
 
-    #all{
+    .all{
         padding: 2% 5%;
     }
 
-    #c11, #c12{
+    .c11, .c12{
         border-radius: 0 0  25px 0;
         padding-left: 10%;
-        margin-left: -10%;
-        margin-right: 67%;
+        margin: 0 67% 10px -10%;
         font-size: 24px;
     }
 
-    #g1, #g2, #cup_big, #cup_middle{
+    #g1, #g2, #cup_big, #cup_middle, #hands{
         display: none;
     }
 
@@ -624,24 +565,16 @@ ul{
         width: 90%;
     }
 
-    #c2{
-        margin: 3px 3px 3px 3px;
+    .c2{
+        margin: 3px;
     }
 
-    #c11, #c12{
-        margin-bottom: 10px;
-    }
-
-    #d{
+    .d{
         width: 70%;
     }
 
     li{
         font-size: 1.4em;
-    }
-
-    #hands{
-        display: none;
     }
 
     #h4a2{
