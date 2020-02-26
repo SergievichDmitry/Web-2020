@@ -5,7 +5,7 @@ body{
 }
 
 .back{
-    height: 520px;
+    height: 480px;
     background: #edf3f5;
 }
 
@@ -73,17 +73,17 @@ header{
     overflow: hidden;
 }
 
-#cloud_left, #cloud_right, #g2, #clouds, #cup_small, #cup_big, .lin{
+#cloud_left, #cloud_right, #g2, .lin{
 display: none;
 }
 
-#clouds_middle{
-    height: 600px;
+#clouds{
+    background: url("clouds_middle.svg") no-repeat;
+    background-size: 100%;
+    height: 330px;
     width: 100%;
     position: absolute;
-    top: 270px;
-    z-index: 0;
-    display: flex;
+    top: 320px;
 }
 
 .a{
@@ -121,11 +121,14 @@ display: none;
     padding: 0 6% 0 0;
 }
 
-#cup_middle{
-    width: 119%;
+#cup{
+    background: url("cup_middle.svg") no-repeat;
+    position: absolute;
+    width: 145%;
+    height: 100%;
     background-size: 78%;
-    margin-left: -9.8%;
-    margin-top: -10%;
+    margin-left: -9.2%;
+    margin-top: -14%;
 }
 
 #cloudie{
@@ -319,7 +322,7 @@ ul{
 @media (min-width: 1025px) {
 
     .back{
-        height: 640px;
+        height: 610px;
     }
 
     header{
@@ -337,30 +340,33 @@ ul{
         margin: 0 auto 13% auto;
     }
 
-    #clouds_middle, #cup_small, #cup_middle{
+    #clouds_middle{
         display: none;
     }
 
     #clouds{
-        height: 790px;
-        width: 100%;
-        position: absolute;
-        top: 310px;
-        z-index: 0;
-        display: flex;
+        background: url("clouds.svg") no-repeat;
+        background-size: 100%;
+        top: 385px;
     }
 
     #cloud_left{
+        background: url("cloudie left.svg") no-repeat;
         display: flex;
         position: absolute;
         top: 220px;
+        height: 80px;
+        width: 160px;
     }
 
     #cloud_right{
+        background: url("cloudie right.svg") no-repeat;
         display: flex;
         position: absolute;
         right: 0px;
         top: 100px;
+        height: 80px;
+        width: 120px;
     }
 
     #g2{
@@ -368,17 +374,16 @@ ul{
         background-size: 80%;
         display: flex;
         position: absolute;
-        width: 180px;
+        width: 13%;
         height: 260px;
         top: 590px;
         left: 85%;
     }
 
-    #cup_big{
-        display: flex;
-        background-repeat: no-repeat;
-        width: 121%;
-        margin-left: -11.2%;
+    #cup{
+        background: url("cup_big.svg") no-repeat;
+        background-size: 78%;
+        margin-left: -10.5%;
         margin-top: -12.5%;
     }
 
@@ -480,6 +485,10 @@ ul{
         background: #dce1e5;
     }
 
+    .a{
+        margin-bottom: 24%;
+    }
+
     .a23, .c{
         display: block;
     }
@@ -496,12 +505,13 @@ ul{
     .b{
         width: 96%;
         margin: 0 auto 15%;
+        padding-top: 15%;
     }
 
-    #clouds_middle{
+    #clouds{
         height: 490px;
         width: 100%;
-        top: 780px;
+        top: 850px;
         display: flex;
     }
 
@@ -542,16 +552,15 @@ ul{
         font-size: 24px;
     }
 
-    #g1, #g2, #cup_big, #cup_middle, #hands{
+    #g2, #hands{
         display: none;
     }
 
-    #cup_small{
-        display: flex;
-        background-repeat: no-repeat;
-        width: 117%;
-        margin-left: -9.6%;
-        margin-top: -8%;
+    #cup{
+        background: url("cup_mobile.svg") no-repeat;
+        background-size: 77%;
+        margin-left: -9.1%;
+        margin-top: -22%;
     }
 
     #b11_i{
