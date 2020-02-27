@@ -34,6 +34,7 @@ header{
 
 #video123{
     border:1px solid #b5bcb6;
+    background: url("vid.PNG");
 }
 
 #video12345{
@@ -216,12 +217,13 @@ display: none;
 }
 
 #hands{
+    background: url("hands.svg") no-repeat;
+    background-size: 100%;
     position: absolute;
     width: 65%;
     height: 60px;
-    padding-left: 10.8%;
-    padding-top: 19px;
-    z-index: 1;
+    margin-top: 23px;
+    left: 17.3%;
 }
 
 .c{
@@ -280,7 +282,7 @@ footer{
     padding: 10px;
 }
 
-#foot{
+.foot{
     font-size: 12px;
 }
 
@@ -410,10 +412,10 @@ ul{
     }
 
     #hands{
-        width: 52%;
-        height: 54px;
-        right: 24%;
-        padding-top: 28px;
+        height: 70px;
+        margin-top: 27px;
+        background-size: 77%;
+        left: 25%;
     }
 
     ul{
@@ -446,7 +448,7 @@ ul{
         font-size: 22px;
     }
 
-    #foot{
+    .foot{
         font-size: 14px;
     }
 
@@ -601,7 +603,7 @@ ul{
         font-size: 1.7em;
     }
 
-    #foot{
+    .foot{
         font-size: 14px;
     }
 }
