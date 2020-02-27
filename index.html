@@ -5,60 +5,18 @@
     <title>Pre-employment</title>
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-        function isEmail() {
-            var str = document.getElementById("b11_i3").value;
-            var str1 = document.getElementById("b11_i1").value;
-            var str2 = document.getElementById("b11_i2").value;
-            var re = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
-            if (re.test(str)) {
-                if (str1 != isEmpty(str1))
-                    if (str2 != isEmpty(str1)) {
-                        b1_p.innerHTML = "Your details have been sent and a representative\n" +
-                            "                from ePlane will be in contact with you shortly.";
-                        b1_h2.innerHTML = "Thank You!";
-                        b11_p.remove();
-                        form.remove();
-                        b11_h2.remove()
-                    }
-            }
-            else {
-                alert("Проверьте правильность данных!");}
-            if(isEmpty(str))
-                alert("Заполните поля!");
-        }
-
-        function isEmpty(str){
-            return (str == null) || (str.length == 0);
-        }
-
-
-
-        function openVideo() {
-            vid.style.cssText = "display: flex";
-            video12345.play();
-            play.style.cssText = "display: none";
-            bd.style.cssText = "position: fixed";
-        }
-
-        function closeVideo() {
-            vid.style.cssText = "display: none";
-            video12345.pause();
-            play.style.cssText = "display: flex";
-            bd.style.cssText = "position: static";
-        }
-
-    </script>
 
 </head>
 <body id="bd">
+
+    <script src="script.js"></script>
 
     <section class="back"/>
 
     <section id="vid">
         <section class="vid1">
             <input id="close" type="button" onclick="closeVideo()" value="X"/>
-            <video id="video12345" src="https://www.w3schools.com/html/mov_bbb.mp4" controls/>
+            <video id="video12345" src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
         </section>
     </section>
 
@@ -93,7 +51,7 @@
 
                 <section class="a3">
                         <video id="video123" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-                        <div id="play" onclick="openVideo()"/>
+                    <div id="play" onclick="openVideo()"></div>
                 </section>
             </section>
 
@@ -107,10 +65,10 @@
 
                 <section id="cup"></section>
 
-                <h2 class="b11_h2">Join us as a seller and takeoff with ePlane!</h2>
-                <p class="b11_p">List your parts today. No subscription fee is required. Leave your details to receive further information.</p>
+                <h2 id="b11_h2">Join us as a seller and takeoff with ePlane!</h2>
+                <p id="b11_p">List your parts today. No subscription fee is required. Leave your details to receive further information.</p>
 
-                <form class="form" novalidate>
+                <form id="form" novalidate>
                     <section class="b11_i" >
                         <input id="b11_i1" type="text" placeholder="First Name" required />
                         <input id="b11_i2" type="text" placeholder="Company" required />
@@ -122,8 +80,8 @@
             </section>
 
             <section class="b1">
-                <h2 class="b1_h2"></h2>
-                <p class="b1_p"></p>
+                <h2 id="b1_h2"></h2>
+                <p id="b1_p"></p>
             </section>
         </section>
 

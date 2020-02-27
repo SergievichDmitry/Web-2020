@@ -10,8 +10,7 @@ body{
 }
 
 header{
-    background: url("logo.svg") no-repeat;
-    background-position: center;
+    background: url("media/logo.svg") center no-repeat;
     text-align: center;
     padding: 20px 0 35px;
     height: 10px;
@@ -34,7 +33,7 @@ header{
 
 #video123{
     border:1px solid #b5bcb6;
-    background: url("vid.PNG");
+    background: url("media/vid.PNG");
 }
 
 #video12345{
@@ -43,11 +42,10 @@ header{
 
 #play{
     position: absolute;
-    background: url("playround.svg");
+    background: url("media/playround.svg") no-repeat;
     margin: auto;
     width: 100px;
     height: 100px;
-    background-repeat: no-repeat;
     background-size: 100%;
 }
 
@@ -79,7 +77,7 @@ display: none;
 }
 
 #clouds{
-    background: url("clouds_middle.svg") no-repeat;
+    background: url("media/clouds_middle.svg") no-repeat;
     background-size: 100%;
     height: 330px;
     width: 100%;
@@ -123,7 +121,7 @@ display: none;
 }
 
 #cup{
-    background: url("cup_middle.svg") no-repeat;
+    background: url("media/cup_middle.svg") no-repeat;
     position: absolute;
     width: 145%;
     height: 100%;
@@ -133,7 +131,7 @@ display: none;
 }
 
 #cloudie{
-    background: url("cloudie.svg") no-repeat;
+    background: url("media/cloudie.svg") no-repeat;
     display: flex;
     position: absolute;
     top: 85%;
@@ -154,14 +152,14 @@ display: none;
     position: relative;
 }
 
-.b11_h2{
+#b11_h2{
     text-align: left;
     padding: 2% 0 0;
     font-size: 24px;
     margin: 0;
 }
 
-.b11_p{
+#b11_p{
     text-align: left;
     padding: 0;
     margin: 5px 0 10px;
@@ -184,7 +182,7 @@ display: none;
     border-color: #28921f;
 }
 
-.form{
+#form{
     position: relative;
 }
 
@@ -207,17 +205,18 @@ display: none;
     width: 30%;
 }
 
-.b1_h2{
+#b1_h2{
     padding-top: 4%;
 }
 
-.b1_p{
+#b1_p{
     width: 50%;
-    margin: 0 auto;
+    margin: 1% auto 7%;
+    display: none;
 }
 
 #hands{
-    background: url("hands.svg") no-repeat;
+    background: url("media/hands.svg") no-repeat;
     background-size: 100%;
     position: absolute;
     width: 65%;
@@ -244,16 +243,14 @@ display: none;
 .c11{
     background: #52a0b2;
     color: white;
-    padding: 8px;
-    padding-left: 30px;
+    padding: 8px 8px 8px 30px;
     border-radius: 0 0 0 25px;
 }
 
 .c12{
     background: #f26253;
     color: white;
-    padding: 8px;
-    padding-left: 30px;
+    padding: 8px 8px 8px 30px;
     border-radius: 0 0  25px 0;
 }
 
@@ -308,7 +305,7 @@ h4{
 }
 
 #h4a2, #a2_p2{
-    margin: 0px;
+    margin: 0;
 }
 
 li{
@@ -347,13 +344,13 @@ ul{
     }
 
     #clouds{
-        background: url("clouds.svg") no-repeat;
+        background: url("media/clouds.svg") no-repeat;
         background-size: 100%;
         top: 385px;
     }
 
     #cloud_left{
-        background: url("cloudie left.svg") no-repeat;
+        background: url("media/cloudie left.svg") no-repeat;
         display: flex;
         position: absolute;
         top: 220px;
@@ -362,17 +359,17 @@ ul{
     }
 
     #cloud_right{
-        background: url("cloudie right.svg") no-repeat;
+        background: url("media/cloudie right.svg") no-repeat;
         display: flex;
         position: absolute;
-        right: 0px;
+        right: 0;
         top: 100px;
         height: 80px;
         width: 120px;
     }
 
     #g2{
-        background: url("gift2.svg") no-repeat;
+        background: url("media/gift2.svg") no-repeat;
         background-size: 80%;
         display: flex;
         position: absolute;
@@ -383,7 +380,7 @@ ul{
     }
 
     #cup{
-        background: url("cup_big.svg") no-repeat;
+        background: url("media/cup_big.svg") no-repeat;
         background-size: 78%;
         margin-left: -10.5%;
         margin-top: -12.5%;
@@ -559,7 +556,7 @@ ul{
     }
 
     #cup{
-        background: url("cup_mobile.svg") no-repeat;
+        background: url("media/cup_mobile.svg") no-repeat;
         background-size: 77%;
         margin-left: -9.1%;
         margin-top: -22%;
