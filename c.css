@@ -1,0 +1,76 @@
+#c__hands{
+    background: url("media/hands.svg") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 65%;
+    height: 60px;
+    margin-top: 23px;
+    left: 17.3%;
+}
+
+.c{
+    display: flex;
+    margin: 0 auto 5%;
+}
+
+.c__left, .c__right{
+    width: 65%;
+    z-index: 2;
+}
+
+.c__right{
+    margin: 0 0 0 10%;
+}
+
+.c__lefthand{
+    background: #52a0b2;
+    color: white;
+    padding: 8px 8px 8px 30px;
+    border-radius: 0 0 0 25px;
+}
+
+.c__righthand{
+    background: #f26253;
+    color: white;
+    padding: 8px 8px 8px 30px;
+    border-radius: 0 0  25px 0;
+}
+
+@media (min-width: 1025px) {
+    .c {
+        margin: 0 auto;
+    }
+
+    #c__hands {
+        height: 70px;
+        margin-top: 27px;
+        background-size: 77%;
+        left: 24.9%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c__lefthand, .c__righthand{
+        border-radius: 0 0  25px 0;
+        padding-left: 10%;
+        margin: 0 67% 10px -10%;
+        font-size: 24px;
+    }
+
+    #c__hands{
+        display: none;
+    }
+
+    .c__right{
+        margin: 3px;
+    }
+
+    .c{
+        display: block;
+    }
+
+    .c, .c__left, .c__right{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,171 @@
+#b__cloudie{
+    background: url("media/cloudie.svg") no-repeat;
+    display: flex;
+    position: absolute;
+    top: 85%;
+    width: 70%;
+    height: 120px;
+    left: -20px;
+}
+
+.b{
+    background: #153a54;
+    text-align: center;
+    margin: 0 0 12% ;
+    padding: 7% 2% 1%;
+    color: white;
+    border-radius: 17px;
+    position: relative;
+}
+
+#b__h2{
+    text-align: left;
+    padding: 2% 0 0;
+    font-size: 24px;
+    margin: 0;
+}
+
+#b__p{
+    text-align: left;
+    padding: 0;
+    margin: 5px 0 10px;
+}
+
+.b__cup{
+    background: url("media/cup_middle.svg") no-repeat;
+    position: absolute;
+    width: 145%;
+    height: 100%;
+    background-size: 78%;
+    margin-left: -9.2%;
+    margin-top: -14%;
+}
+
+.form__buttons{
+    padding: 0 0 2%;
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+}
+
+#form__buttons input:focus:invalid{
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+#form__buttons input:focus:valid {
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+
+#b__form{
+    position: relative;
+}
+
+.form__buttonOK{
+    position: absolute;
+    display: flex;
+    right: 1%;
+    background: #f26253;
+    border-radius: 8px 0 8px 0;
+    padding: 7px 25px;
+    color: white;
+    border: none;
+    font-family: Lucida, sans-serif;
+    font-size: 14px;
+}
+
+.form__buttonOK:hover{
+    cursor: pointer
+}
+
+#form__button1, #form__button2, #form__button3{
+    padding: 1%;
+    margin: 1% 0;
+    width: 30%;
+}
+
+#b__h2__unvisible{
+    padding-top: 4%;
+}
+
+#b__p__unvisible{
+    width: 50%;
+    margin: 1% auto 7%;
+    display: none;
+}
+
+
+@media (min-width: 1025px) {
+    .b__cup {
+        background: url("media/cup_big.svg") no-repeat;
+        background-size: 78%;
+        margin-left: -9.5%;
+        margin-top: -12.5%;
+    }
+
+    #b__cloudie {
+        top: 85%;
+        width: 60%;
+        height: 120px;
+        left: -40px;
+    }
+
+    .b {
+        margin: 0 auto 4% auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .b{
+        width: 96%;
+        margin: 0 auto 15%;
+        padding-top: 15%;
+    }
+
+    #b__cloudie{
+        top: 86%;
+        width: 160px;
+        height: 130px;
+        left: -15px;
+    }
+
+    #b__body__unvisible{
+        padding: 3% 0 7%;
+    }
+
+
+    #b__h2{
+        padding: 4% 4% 0;
+        font-size: 26px;
+    }
+
+    #b__p{
+        padding: 0 4%;
+        font-weight: 100;
+    }
+
+    .b__cup{
+        background: url("media/cup_mobile.svg") no-repeat;
+        background-size: 77%;
+        margin-left: -9.1%;
+        margin-top: -22%;
+    }
+
+    #form__buttonOK{
+        right: 3.5%;
+    }
+
+    #form__buttons{
+        display: block;
+    }
+
+    #form__button1, #form__button2{
+        width: 42.2%;
+        margin: 1%;
+    }
+
+    #form__button3{
+        width: 90%;
+    }
+}

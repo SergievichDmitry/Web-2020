@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <title>Pre-employment</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="b.css">
+    <link rel="stylesheet" href="c.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
 
 </head>
 <body id="bd">
-
-    <script src="script.js"></script>
-
     <section class="back"/>
 
     <section id="vid">
-        <section class="vid1">
-            <input id="close" type="button" onclick="closeVideo()" value="X"/>
-            <video id="video12345" src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+        <section class="vid__body">
+            <input class="vid__close" type="button" onclick="closeVideo()" value="X"/>
+            <video id="vid__video" src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
         </section>
     </section>
 
@@ -28,30 +29,30 @@
 
     <section class="all">
 
-        <section id="g2"></section>
+        <section id="gift"></section>
         <section class="lin"></section>
 
         <section class="a">
-            <section class="a1">
+            <section class="a__header">
                 <H1>SOON,</H1>
                 <H2>You will enter a new era of aerospace eCommerce</H2>
             </section>
-            <section class="a23">
-                <section class="a2">
-                    <H4 id="h4a2">ePlane will offer an end to end marketplace,
+            <section class="a__body">
+                <section class="a__text">
+                    <H4 class="a__H4">ePlane will offer an end to end marketplace,
                     you can rely on.</H4>
                     <p>Our goal is to connect buyers and sellers, on one convenient
                     platform, benefiting all sides and giving more power for you!
                     By streamlining the order process, ePlane will increase efficiency
                     and productivity.</p>
 
-                    <p id = "a2_p2">ePlane will support four different transction types - Buy, Repair,
+                    <p class="a__P2">ePlane will support four different transction types - Buy, Repair,
                     Exchange and Loan - covering all of your sale and acquisition needs.</p>
                 </section>
 
-                <section class="a3">
-                        <video id="video123" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-                    <div id="play" onclick="openVideo()"></div>
+                <section class="a__video">
+                    <video id="a__video-icon" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+                    <div id="a__play" onclick="openVideo()"></div>
                 </section>
             </section>
 
@@ -59,38 +60,38 @@
 
         <section class="b">
 
-            <section id="cloudie"></section>
+            <section id="b__cloudie"></section>
 
-            <section class="b11">
+            <section class="b__body">
 
-                <section id="cup"></section>
+                <section class="b__cup"></section>
 
-                <h2 id="b11_h2">Join us as a seller and takeoff with ePlane!</h2>
-                <p id="b11_p">List your parts today. No subscription fee is required. Leave your details to receive further information.</p>
+                <h2 id="b__h2">Join us as a seller and takeoff with ePlane!</h2>
+                <p id="b__p">List your parts today. No subscription fee is required. Leave your details to receive further information.</p>
 
-                <form id="form" novalidate>
-                    <section class="b11_i" >
-                        <input id="b11_i1" type="text" placeholder="First Name" required />
-                        <input id="b11_i2" type="text" placeholder="Company" required />
-                        <input id="b11_i3" type="text" placeholder="eMail" required />
+                <form id="b__form" novalidate>
+                    <section class="form__buttons" >
+                        <input id="form__button1" type="text" placeholder="First Name" required />
+                        <input id="form__button2" type="text" placeholder="Company" required />
+                        <input id="form__button3" type="text" placeholder="eMail" required />
                         <span id="status"></span>
                     </section>
-                    <input class="b11_f" type="button" onclick="isEmail()" value="Join as a Seller"/>
+                    <input class="form__buttonOK" type="button" onclick="isEmail()" value="Join as a Seller"/>
                 </form>
             </section>
 
-            <section class="b1">
-                <h2 id="b1_h2"></h2>
-                <p id="b1_p"></p>
+            <section id="b__body__unvisible">
+                <h2 id="b__h2__unvisible"></h2>
+                <p id="b__p__unvisible"></p>
             </section>
         </section>
 
         <section class="c">
 
-            <section id="hands"></section>
+            <section id="c__hands"></section>
 
-            <section class="c1">
-                <H4 class="c11">Seller's Benefits</H4>
+            <section class="c__left">
+                <H4 class="c__lefthand">Seller's Benefits</H4>
                 <ul>
                     <li>Bigger market presence and inventory explosure</li>
                     <li>An integrated communication system</li>
@@ -99,8 +100,8 @@
                     <li>Personalized statistics and business insights</li>
                 </ul>
             </section>
-            <section class="c2">
-                <H4 class="c12">Biyer's Benefits</H4>
+            <section class="c__right">
+                <H4 class="c__righthand">Biyer's Benefits</H4>
                 <ul>
                     <li>Full transparency - documentation, tags, and prices</li>
                     <li>100% legitimate and reliable inventory listings</li>
