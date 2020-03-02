@@ -1,7 +1,10 @@
-#b__cloudie{
+.b__cloudie{
     background: url("media/cloudie.svg") no-repeat;
     display: flex;
     position: absolute;
+}
+
+.b__cloudie_position{
     top: 85%;
     width: 70%;
     height: 120px;
@@ -10,12 +13,14 @@
 
 .b{
     background: #153a54;
-    text-align: center;
-    margin: 0 0 12% ;
-    padding: 7% 2% 1%;
     color: white;
     border-radius: 17px;
     position: relative;
+}
+
+.b_position{
+    margin: 0 0 12% ;
+    padding: 7% 2% 1%;
 }
 
 #b__h2{
@@ -44,7 +49,6 @@
 .form__buttons{
     padding: 0 0 2%;
     justify-content: space-around;
-    width: 100%;
     display: flex;
 }
 
@@ -85,14 +89,16 @@
     width: 30%;
 }
 
-#b__h2__unvisible{
+#b__body_unvisible{
+    text-align: center;
+}
+
+#b__h2_unvisible{
     padding-top: 4%;
 }
 
-#b__p__unvisible{
-    width: 50%;
-    margin: 1% auto 7%;
-    display: none;
+#b__p_unvisible{
+    padding: 0 25%;
 }
 
 
@@ -104,7 +110,7 @@
         margin-top: -12.5%;
     }
 
-    #b__cloudie {
+    #b__cloudie_position {
         top: 85%;
         width: 60%;
         height: 120px;
@@ -117,20 +123,20 @@
 }
 
 @media screen and (max-width: 768px) {
-    .b{
+    .b_position{
         width: 96%;
         margin: 0 auto 15%;
         padding-top: 15%;
     }
 
-    #b__cloudie{
+    #b__cloudie_position{
         top: 86%;
         width: 160px;
         height: 130px;
         left: -15px;
     }
 
-    #b__body__unvisible{
+    #b__body_unvisible{
         padding: 3% 0 7%;
     }
 

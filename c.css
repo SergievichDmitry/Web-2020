@@ -10,6 +10,9 @@
 
 .c{
     display: flex;
+}
+
+.c_position{
     margin: 0 auto 5%;
 }
 
@@ -25,19 +28,21 @@
 .c__lefthand{
     background: #52a0b2;
     color: white;
-    padding: 8px 8px 8px 30px;
     border-radius: 0 0 0 25px;
 }
 
 .c__righthand{
     background: #f26253;
     color: white;
-    padding: 8px 8px 8px 30px;
     border-radius: 0 0  25px 0;
 }
 
+.c__lefthand_position{
+    padding: 8px 8px 8px 30px;
+}
+
 @media (min-width: 1025px) {
-    .c {
+    .c_position {
         margin: 0 auto;
     }
 
@@ -50,7 +55,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .c__lefthand, .c__righthand{
+    .c__lefthand_position{
         border-radius: 0 0  25px 0;
         padding-left: 10%;
         margin: 0 67% 10px -10%;
@@ -61,16 +66,12 @@
         display: none;
     }
 
-    .c__right{
-        margin: 3px;
+    .c__left_position{
+        margin: 0;
+        width: 100%;
     }
 
     .c{
         display: block;
     }
-
-    .c, .c__left, .c__right{
-        width: 100%;
-    }
-
 }

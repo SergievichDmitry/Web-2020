@@ -25,18 +25,19 @@ header{
     height: 202%;
 }
 
-.vid__body{
-    display: block;
+.vid__body_position{
     width: 100%;
-    padding: 20vh 3% 0 10%;
+    padding: 13vh 7% 5vh 11%;
 }
 
 #vid__video{
-    width: 90%;
+    width: 95%;
+    max-height: 40%;
+    display: flex;
 }
 
 .vid__close{
-    padding-left: 91%;
+    padding-left: 96%;
     font-size: 24px;
     color: white;
     background: rgba(0, 0, 0, 0);
@@ -142,6 +143,10 @@ ul{
         padding: 10px 0 20px;
     }
 
+    .vid__body_position{
+        padding: 13vh 12% 5vh 16%;
+    }
+
     #clouds_middle{
         display: none;
     }
@@ -234,8 +239,8 @@ ul{
         height: 970px;
     }
 
-    #vid{
-        height: 324%;
+    .vid__body_position{
+        padding: 13vh 1% 5vh 5%;
     }
 
     .lin{

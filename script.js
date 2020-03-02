@@ -6,11 +6,11 @@ function isEmail() {
     if (re.test(str)) {
         if (str1 != isEmpty(str1))
             if (str2 != isEmpty(str1)) {
-                b__p__unvisible.innerHTML = "Your details have been sent and a representative\n" +
+                b__p_unvisible.innerHTML = "Your details have been sent and a representative\n" +
                     "                from ePlane will be in contact with you shortly.";
-                b__h2__unvisible.innerHTML = "Thank You!";
-                b__p__unvisible.style.cssText = "display: block";
-                b__body__unvisible.style.cssText = "display: block";
+                b__h2_unvisible.innerHTML = "Thank You!";
+                b__p_unvisible.style.cssText = "display: block";
+                b__body_unvisible.style.cssText = "display: block";
                 b__p.remove();
                 b__form.remove();
                 b__h2.remove();

@@ -1,7 +1,10 @@
 .a{
     display: block;
-    margin: 0 auto 17%;
     position: relative;
+}
+
+.a_position{
+    margin: 0 auto 17%;
 }
 
 #a__video-icon{
@@ -12,7 +15,6 @@
 #a__play{
     position: absolute;
     background: url("media/playround.svg") no-repeat;
-    margin: auto;
     width: 100px;
     height: 100px;
     background-size: 100%;
@@ -33,13 +35,11 @@
 
 .a__video{
     display: flex;
-    margin: auto;
     align-items: center;
-    align-content: center;
     justify-content: center;
 }
 
-.a__text{
+.a__text_position{
     padding: 0 6% 0 0;
 }
 
@@ -54,7 +54,7 @@
         height: 110px;
     }
 
-    .a{
+    .a_position{
         margin: 0 auto 13% auto;
     }
 }
@@ -71,12 +71,11 @@
         height: 140px;
     }
 
-    .a__video {
+    .a__video_position{
         padding-top: 3%;
-        width: 100%;
     }
 
-    .a{
+    .a_position{
         margin-bottom: 24%;
     }
 
@@ -84,12 +83,12 @@
         display: block;
     }
 
-    .a__header, .a__text, .a__video, .a{
-        width: 100%;
+    .a__text{
+        padding: 0;
     }
 
-    #a__H4{
-        font-size: 1.7em;
+    .a__H4{
+        font-size: 1.6em;
         font-weight: 100;
     }
 }
