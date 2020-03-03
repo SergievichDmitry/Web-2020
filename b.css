@@ -158,12 +158,13 @@
         margin-top: -22%;
     }
 
-    #form__buttonOK{
-        right: 3.5%;
+    .form__buttonOK{
+        right: 6%;
     }
 
-    #form__buttons{
+    .form__buttons{
         display: block;
+        margin: 1% 0 0 3%;
     }
 
     #form__button1, #form__button2{
@@ -173,5 +174,6 @@
 
     #form__button3{
         width: 90%;
+        margin: 1% 0 0 1%;
     }
 }
