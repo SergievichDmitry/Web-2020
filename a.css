@@ -7,7 +7,7 @@
     margin: 0 auto 17%;
 }
 
-#a__video-icon{
+.a__video video{
     border:1px solid #b5bcb6;
     background: url("media/vid.PNG");
 }
@@ -43,7 +43,7 @@
     padding: 0 6% 0 0;
 }
 
-.a__H4, .a__P2{
+.a__text H4, .a__P2{
     margin: 0;
 }
 
