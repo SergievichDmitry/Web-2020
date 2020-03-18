@@ -60,19 +60,17 @@
 }
 
 @media screen and (max-width: 768px) {
+    .a__video{
+        padding-top: 3%;
+    }
 
-    #a__video-icon {
-        display: block;
+    .a__video video{
         width: 100%;
     }
 
     #a__play {
         width: 140px;
         height: 140px;
-    }
-
-    .a__video_position{
-        padding-top: 3%;
     }
 
     .a_position{
@@ -87,7 +85,7 @@
         padding: 0;
     }
 
-    .a__H4{
+    .a__text H4{
         font-size: 1.6em;
         font-weight: 100;
     }
