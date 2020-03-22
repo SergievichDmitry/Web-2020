@@ -1,0 +1,290 @@
+$blue: #153a54;
+
+body{
+  margin: 0 auto;
+  background: white;
+  font-family: Lucida, sans-serif;
+}
+
+.back{
+  height: 480px;
+  background: #edf3f5;
+}
+
+header{
+  background: url("media/logo.svg") center no-repeat;
+  text-align: center;
+  padding: 20px 0 35px;
+  height: 10px;
+}
+
+#vid{
+  display: none;
+  position: fixed;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 202%;
+}
+
+.vid__body_position{
+  width: 100%;
+  padding: 13vh 7% 5vh 11%;
+}
+
+#vid__video{
+  width: 95%;
+  max-height: 40%;
+  display: flex;
+}
+
+.vid__close{
+  padding-left: 96%;
+  font-size: 24px;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+}
+
+#h1{
+  width: 25%;
+  height: 10%;
+  display: flex;
+}
+
+.all{
+  padding: 0 15%;
+  overflow: hidden;
+}
+
+#cloud_left, #cloud_right, #gift, .lin{
+  display: none;
+}
+
+#clouds{
+  background: url("media/clouds_middle.svg") no-repeat;
+  background-size: 100%;
+  height: 330px;
+  width: 100%;
+  position: absolute;
+  top: 320px;
+}
+
+.d{
+  width: 85%;
+  text-align: center;
+  margin: 0 auto 5%;
+  padding: 3%;
+  color: #52a0b2;
+}
+
+ul{
+  /*list-style-image: url("123.png");*/
+  list-style-type: square;
+}
+
+p{
+  font-size: 15px;
+}
+
+footer{
+  display: block;
+  text-align: center;
+  background: $blue;
+  color: white;
+  padding: 10px;
+}
+
+footer p{
+  font-size: 12px;
+}
+
+h1{
+  font-size: 46px;
+  font-weight: bolder;
+  margin: 0;
+  color: $blue;
+}
+
+h2{
+  font-size: 29px;
+  margin-top: 0;
+}
+
+h3{
+  font-size: 22px;
+}
+
+h4{
+  font-size: 18px;
+  color: $blue;
+}
+
+li{
+  padding: 2% 1%;
+  font-size: 13px;
+}
+
+ul{
+  padding-left: 16px;
+}
+
+
+@media (min-width: 1025px) {
+
+  .back{
+    height: 610px;
+  }
+
+  .all{
+    padding: 0 20%;
+  }
+
+  header{
+    text-align: center;
+    padding: 10px 0 20px;
+  }
+
+  .vid__body_position{
+    padding: 13vh 12% 5vh 16%;
+  }
+
+  #clouds_middle{
+    display: none;
+  }
+
+  #clouds{
+    background: url("media/clouds.svg") no-repeat;
+    background-size: 100%;
+    top: 385px;
+  }
+
+  #cloud_left{
+    background: url("media/cloudie left.svg") no-repeat;
+    display: flex;
+    position: absolute;
+    top: 220px;
+    height: 80px;
+    width: 160px;
+  }
+
+  #cloud_right{
+    background: url("media/cloudie right.svg") no-repeat;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    height: 80px;
+    width: 120px;
+  }
+
+  #gift{
+    background: url("media/gift2.svg") no-repeat;
+    background-size: 80%;
+    display: flex;
+    position: absolute;
+    width: 13%;
+    height: 260px;
+    top: 590px;
+    left: 85%;
+  }
+
+  .d{
+    width: 52%;
+    margin: 0 auto 2% auto;
+  }
+
+  ul{
+    padding-left: 34px;
+  }
+
+  li{
+    font-size: 15px;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  h1{
+    font-size: 54px;
+    margin: 0;
+  }
+
+  h2{
+    font-size: 37px;
+    margin-top: 0;
+  }
+
+  h3{
+    font-size: 26px;
+  }
+
+  h4{
+    font-size: 22px;
+  }
+
+  footer p{
+    font-size: 14px;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  header{
+    padding-bottom: 20px;
+  }
+
+  .back{
+    height: 970px;
+  }
+
+  .vid__body_position{
+    padding: 13vh 1% 5vh 5%;
+  }
+
+  .lin{
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 40px;
+    background: #dce1e5;
+  }
+
+  #clouds{
+    height: 490px;
+    width: 100%;
+    top: 850px;
+    display: flex;
+  }
+
+  .all{
+    padding: 2% 5%;
+  }
+
+  #gift{
+    display: none;
+  }
+
+  .d{
+    width: 70%;
+  }
+
+  li{
+    font-size: 1.4em;
+  }
+
+  p{
+    font-size: 22px;
+  }
+
+  h3{
+    font-size: 1.7em;
+  }
+
+  footer p{
+    font-size: 14px;
+  }
+}
